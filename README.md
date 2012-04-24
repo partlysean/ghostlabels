@@ -1,4 +1,4 @@
-ghostlabels
+Ghost Labels
 ===========
 
-Some Javascript for really neat inline labels for form inputs
+A small bit of Javascript (powered by jQuery) for creating cool inline form field labels.

@@ -1,0 +1,33 @@
+/* REQUIRED CSS
+------------------------------------------------------------ */
+
+.ghost-label {
+    position: relative;
+}
+
+.ghost-label label {
+    /* The 'top' and 'left' values will change depending on the size
+    of your input field and where you want the label positioned */
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: text;
+}
+
+/* STYLES FOR THIS EXAMPLE
+------------------------------------------------------------ */
+
+body {
+    font: 15px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+}
+
+.ghost-label label {
+    top: 9px;
+    left: 8px;
+}
+
+input {
+    font: 15px 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+    width: 200px;
+    padding: 5px;
+}
