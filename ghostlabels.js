@@ -35,11 +35,11 @@ function labelHide() {
     if ($(this).val().length > 0) {
         $('label[for="' + fieldId + '"]').hide();
     } else {
-        $('label[for="' + fieldId + '"]').show();
+        $('label[for="' + fieldId + '"]').show().fadeTo(0, 0.5);
     }
 }
 
-/* Check for inputs with no values. Show label if empty
+/* Check for inputs with no values and show label if empty
 ------------------------------------------------------------ */
 
 function checkInputValues() {
@@ -67,10 +67,10 @@ function checkInputValues() {
     }
 }
 
-/* Listeners
+/* Event Listeners
 ------------------------------------------------------------ */
 
-$(document).ready(function() { checkInputValues(); });
+$(document).ready(function() { checkInputValues(); }); // Run when the page loads
 $('textarea, input[type="text"], input[type="password"], input[type="email"]').focus(labelFadeIn);
 $('textarea, input[type="text"], input[type="password"], input[type="email"]').blur(labelFadeOut);
 $('textarea, input[type="text"], input[type="password"], input[type="email"]').bind('input', labelHide); // Modern browsers
